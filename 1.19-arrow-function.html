@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow function (ES6)</title>
+</head>
+<body>
+  <h2>Arrow function is a shortcut way of writing javascript function in ES6</h2>
+
+  <script>
+    function add1(num1, num2){
+      return num1 + num2;
+    }
+
+    let result = add1(5,7);
+    console.log(result);
+
+    const add2 = function(num1, num2){
+      return num1 + num2;
+    }
+
+    result = add2(6, 31);
+    console.log(result);
+
+    const add3 = (num1, num2) => {
+      return num1+num2;
+    }
+
+    //or
+
+    const add = (num1, num2) => num1+num2;
+
+    result = add3(8,9);
+    console.log(result);
+
+    // const sqFunction = function(a) {
+      // return a*a;
+    // }/
+
+    // const sqFunction = (a) => {
+    //   return a*a;
+    // }
+
+    // const sqFunction = (a) => a*a;
+
+    const sqFunction = a => a*a;
+
+    console.log(sqFunction(5));
+
+    const sayHello = () => console.log("Hello World!");
+    sayHello();
+
+    setInterval(() => {console.log('After 2 secs');},2000);
+  </script>
+</body>
+</html>

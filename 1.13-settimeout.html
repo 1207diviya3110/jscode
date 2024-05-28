@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>setTimout function in JS</title>
+</head>
+<body id="bodyTag">
+  <h2>setTimeeout function in JS</h2>
+
+  <script>
+    function display(empName, empDept){
+      console.log("Name: "+empName+" & Department: "+empDept);
+    }
+
+    // display("Nicha","Chem");
+
+    // setTimeout(display, 4000);
+
+    setTimeout(display, 4000, 'Nicha', 'Chemistry');
+    //this functions helps to execute only once
+
+    setInterval(function(){
+      document.querySelector('#bodyTag').style.backgroundColor = 'blue';
+    }, 6000)
+
+    //send otp, otp should expire in 30sec, but the user enters the otp within 30 sec then you want to cancel the setTimeout so the otp will not expire
+
+    let timeoutId = setTimeout(display, 10000, 'Nicha','Chemistry');
+    console.log(`Timeout Id is: ${timeoutId}`);
+
+    //to cancel the 10 sec timeout
+
+    clearTimeout(timeoutId);
+    
+  </script>
+</body>
+</html>

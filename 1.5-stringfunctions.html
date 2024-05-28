@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String functions in JavaScript</title>
+</head>
+<body>
+  <h2>String Functions</h2>
+
+  <script>
+    var line = 'Nitya is a good girl';
+    console.log(line.length);
+
+    console.log(line.indexOf("oo")); //first occurance
+    console.log(line.indexOf("o"))//1
+    console.log(line.lastIndexOf("o")) // finds last occurance of the item
+
+    console.log(line.slice(2,6)) //hn i because the last item is not included (here it is s)
+    console.log(line.substring(2,6)) // hn i diff is slice method also takes negative indexed 
+    console.log(line.substr(2,7)); //2nd parameter is length, here it is 7 characters from index 2 including index 2
+
+    console.log(line.toUpperCase());
+    console.log(line.toLowerCase());
+
+
+    var data = "    Today is a good day to      outside     ";
+    console.log(data.trim()); //removes white spaces from both ends
+
+    console.log(line);
+    var result = line.replace("Nitya","Deepu"); //does not change the origial string
+    console.log(line);
+    console.log(result);
+
+    console.log(line.charAt(3)); //3rd index
+    console.log(line[5]);
+    console.log(line.charCodeAt(3));
+
+  </script>
+</body>
+</html>

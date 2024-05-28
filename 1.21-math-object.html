@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Object in JS</title>
+</head>
+<body>
+  <h2>MMath object in JS</h2>
+
+  <script>
+    let mathObj = Math;
+    console.log(mathObj);
+    console.log("Value of PI is" + Math.PI);
+
+    console.log("Rounding "+Math.round(23.9));
+    console.log("Exponential power "+Math.pow(5,3));
+    console.log("Square root of 144 is "+Math.sqrt(144));
+
+    console.log("Ceil "+Math.ceil(22.4));
+    console.log("Floor "+Math.floor(22.4));
+
+    console.log(Math.abs(-5));
+
+    console.log("Sin(pi) is"+ Math.sin(Math.PI/2));
+
+    console.log("Max number is"+Math.max(22,344,64,223));
+    console.log("Min number is "+Math.min(22,54,21,77));
+
+    let randomNo = Math.random();
+
+    function randomIntFromInterval(min, max) {
+      return Math.floor(Math.random() * (max - min +1) + min);
+    }
+
+    const rndInt = randomIntFromInterval(1,200);
+    console.log(rndInt);
+
+  </script>
+</body>
+</html>

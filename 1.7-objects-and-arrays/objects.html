@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects in JavaScript</title>
+</head>
+<body>
+  <h2>Objects in JavaScript</h2>
+  <script>
+    let var1 = 7;
+    console.log("Type of var1 is"+ typeof var1);
+    let var2 = 'Jay';
+    console.log("Type of var2 is"+ typeof var2);
+    let var3 = 57.7;
+    console.log("Type of var3 is"+ typeof var3);
+    let var4 = true;
+    console.log("Type of var4 is"+ typeof var4);
+    let var5;
+    console.log("Type of var5 is"+ typeof var5);
+    //default of js undefined...
+    //if(var5) => false
+    let var6 = undefined;
+    console.log("Type of var6 is"+ typeof var6);
+    let var7 = null;
+    console.log("Type of var7 is"+ typeof var7);
+
+
+    let student = {
+      name: "Nitya",
+      rollNo: 13,
+      age: 5,
+    }
+
+    console.log(student);
+    console.log(typeof student)
+
+    console.log(student.name);
+    console.log(student['name']);
+
+    const {rollNo, age} = student;
+    console.log(rollNo);
+    console.log(age);
+  </script>
+</body>
+</html>

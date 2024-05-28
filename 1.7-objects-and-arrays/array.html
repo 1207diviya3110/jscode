@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays in JavaScript</title>
+</head>
+<body>
+  <h2>Arrays in JavaScript</h2>
+  <script>
+    //Array can keep more than one similar and non-similar items
+
+    let ageArray = [23,24,30,32]; //array of similar items
+    let names = ['Nitya','Deepu','Divya','Ammu'];
+    let salaries = [2345,1334,5433,1233];
+
+    let randomArray = [12, "Nitya", 2445];
+
+    console.log(randomArray);
+    console.log(randomArray[3]); //undefined
+    console.log(randomArray[2]);
+    //2445
+
+    console.log(salaries);
+    console.log(typeof salaries);
+    console.log(salaries.length);
+
+    salaries = salaries.sort();
+    console.log("Salaries after sorting")
+    console.log(salaries);
+
+    salaries.push(5567);
+    console.log(salaries);
+
+    //splice is used to add or remove items from arry. it modifies the original array
+
+    console.log(salaries.splice(0,2)); //this removes items
+    console.log(salaries);
+
+    console.log(salaries.splice(0,2, 6744, 9999)); //this adds items
+    console.log(salaries);
+
+    //removing last item
+    salaries.splice(salaries.length-1, 1)
+
+    // let deptArray = new Array(4)
+    //this will create a 4 empty items
+
+    let deptArray = new Array("phy", "chem","Math");
+    console.log(deptArray);
+    console.log(deptArray[0]);
+
+    console.log(typeof deptArray);
+
+
+    //array of objects
+    let student1 = {
+      name: "Nitya",
+      rollNo: 13,
+      age: 5,
+      "department name": "Kita"
+    }
+
+    let student2 = {
+      name: "Deepu",
+      rollNo: 11,
+      age: 31,
+    }
+
+    let student = [student1, student2];
+    console.log(student);
+  </script>
+</body>
+</html>

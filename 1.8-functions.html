@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions in JS</title>
+</head>
+<body>
+  <p>Functions in JS</p>
+  <ul>
+    <li>Function helps us avoid repeating code over and over again</li>
+    <li>
+      Function is a place of reusable code that will written once and used as many times as needed.
+    </li>
+    <li>
+      Function starts with function keyword
+    </li>
+    <li>
+      Function can take parameter or they can be if non parameter.
+    </li>
+    <li>
+      Function may or may not have a return type
+    </li>
+    <li>
+      Code inside a function only gets executed when it is called.
+    </li>
+  </ul>
+
+  <script>
+
+    //defining the function
+    function addNumbers(){
+      console.log(5+7);
+    }
+
+    //calling a function
+    addNumbers();
+
+    function addTwoNumbersAndReturn(num1, num2){
+      let result = num1 + num2;
+      return result;
+      console.log("This will not execuute as it is written after return statement");
+    }
+
+    const output = addTwoNumbersAndReturn(5,7);
+    console.log(output);
+
+    function addTwoNumbers(num1, num2){
+      let result = num1 + num2;
+      console.log(result);
+    }
+
+    addTwoNumbers
+    n(5,7)
+
+    function add2NumbersWithReturnAndDefaultValues(num1, num2 = 7){
+      return num1 + num2;
+    }
+
+    let out1 = add2NumbersWithReturnAndDefaultValues(5,8 );
+    console.log(out1);
+    out1 = add2NumbersWithReturnAndDefaultValues(5);
+    console.log(out1);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactivity in JS</title>
+</head>
+<body>
+  <p>Interactivity in JS</p>
+  <script>
+    function add(){
+
+      //prmopt returns input value
+      let num1 = prompt("Enter the first number","2.4");
+      //default value is 2.4
+      num1 = parseFloat(num1)
+      let num2 = prompt("Enter the second nnumber");
+      num2 = parseFloat(num2);
+      let result = num1 + num2;
+
+      //alert does not return any value
+      alert(`Result of adding ${num1} and ${num2} is ${result}`);
+    }
+    add();
+
+    function deleteCart(){
+      //confirm will help the user to decide on an action
+
+      let input = confirm("Are you sure you want to delete the cart");
+
+      if(input){
+        alert("Cart has been deleted successfully!");
+      } else {
+        alert("Cart cannot be deleted");
+      }
+
+    }
+
+    deleteCart();
+  </script>
+</body>
+</html>
